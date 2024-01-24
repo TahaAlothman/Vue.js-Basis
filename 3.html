@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuejs Basics</title>
+</head>
+<body>
+    <div id="app">
+        <a v-bind:href="link">Google</a>
+        <a :href="link2">Google2</a>
+        <input type="text" :value='text'>  <!--  wenn wir den Text durch value eingeben dann wird das von dem unteren Text koppiert aber wenn wir anstatt value 'v-model' schreiben wird das geändert in beiden speicher platz   -->
+        <input type="text" v-model='text2'>
+    </div>
+   
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+   <script>
+       const { createApp, ref } = Vue
+  
+  createApp({
+    data() {
+      return {
+        link: 'http://www.google.com',
+        link2: 'http://www.fb.com',
+        text:'hello im a frontend Developer',
+        text2:'hey im Taha'
+      }
+    },
+    
+
+
+  }).mount('#app')
+   </script>
+</body>
+</html>
