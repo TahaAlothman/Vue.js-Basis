@@ -1,3 +1,0 @@
-*.vue linguist-language=Vue
-*.vue custom:vue
-*.vue documentation:vue_instructions.txt
