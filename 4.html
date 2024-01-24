@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuejs Basics</title>
+</head>
+<body>
+    <div id="app">
+        <button v-on:click="myfunc" >click me</button>
+       <!-- <button v-on:click="myfunc" >click me</button> == <button @:click="myfunc" >click me</button>-->
+    </div>
+   
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+   <script>
+       const { createApp, ref } = Vue
+  
+  createApp({
+    methods:{
+        myfunc(){
+           console.log ('test')
+        }
+    }
+    
+    
+
+
+  }).mount('#app')
+   </script>
+</body>
+</html>
